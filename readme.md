@@ -1,2 +1,2 @@
 ### My Personal Bot
-Talk to it to know more about me.
+Talk to my bot to know more about me.

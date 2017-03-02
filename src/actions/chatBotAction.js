@@ -1,7 +1,5 @@
 import actionTypes from './const';
 import dsMessage from '../sources/dsMessages';
-import intentMessageMapping from '../sources/intentMessageMapping';
-import presentMessages from '../sources/presetMessages';
 
 import store from '../stores';
 
@@ -17,29 +15,10 @@ const chatBotAction = {
       })
       .then(function (text) {
         const data = JSON.parse(text);
-        let intentMessage;
-        let messages = [];
-
-        if (data.result && data.result.action) {
-          intentMessage = intentMessageMapping[data.result.action];
-        }
-
-        if (data.result && data.result.fulfillment && data.result.fulfillment.speech) {
-          messages.push(data.result.fulfillment.speech);
-        }
-
-        if (intentMessage) {
-          messages.push(intentMessage);
-        }
-
-        store.dispatch(chatBotAction.getMessageSuccess({
-          messages: messages
-        }));
+        store.dispatch(chatBotAction.getMessageSuccess(data));
       })
       .catch(function (ex) {
-        store.dispatch(chatBotAction.getMessageFail({
-          message: presentMessages.serverError
-        }));
+        store.dispatch(chatBotAction.getMessageFail());
       });
 
     return {

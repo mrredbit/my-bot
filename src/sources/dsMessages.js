@@ -4,7 +4,6 @@ import config from 'config';
 export default {
   getMessageFromApiAi: function (myMessage) {
     const url = config.apiai.baseUrl + config.apiai.queryUrl;
-    debugger;
     return fetch(url, {
       method: 'POST',
       headers: {

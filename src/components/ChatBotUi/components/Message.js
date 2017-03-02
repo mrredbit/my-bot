@@ -1,6 +1,7 @@
 import React from 'react';
 import style from '../styles/Message.css';
 import imgBot from '../images/bot.svg';
+import nl2br from 'react-nl2br';
 
 class Message extends React.Component {
   render() {
@@ -14,12 +15,12 @@ class Message extends React.Component {
       myMessage: this.props.senderId === 'me',
       includeProfile: this.props.isPauseMessage || this.props.isTyping
     });
+    const message = this.props.isTyping ? 'Robo Nyan is typing . . . ' : this.props.children;
     return (
       <div className={style.index}>
         <img className={senderProfileClass} src={imgBot}/>
         <div className={messageClass}>
-          {this.props.children}
-          {this.props.isTyping && <div>Robo Nyan is typing . . . </div>}
+          {nl2br(message)}
         </div>
       </div>
     );

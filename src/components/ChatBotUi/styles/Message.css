@@ -13,6 +13,10 @@
   border-radius: 15px;
   font-size: 12px;
   line-height: 1.7;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+
 }
 
 .message.myMessage {

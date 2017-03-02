@@ -3,6 +3,15 @@
   flex: 1 1 auto;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  padding-top: 40px;
   overflow-y: auto;
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+  .index {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

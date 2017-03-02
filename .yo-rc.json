@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "myBot",
+    "style": "css",
+    "postcss": true
+  }
+}

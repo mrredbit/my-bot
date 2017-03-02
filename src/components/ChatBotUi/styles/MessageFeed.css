@@ -1,0 +1,8 @@
+.index {
+  position: relative;
+  flex: 1 1 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  overflow-y: auto;
+}

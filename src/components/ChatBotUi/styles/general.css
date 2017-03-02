@@ -1,0 +1,12 @@
+.button {
+  float: right;
+  border-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+}
+
+.input {
+  border-style: none;
+  outline: none;
+}

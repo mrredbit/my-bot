@@ -1,0 +1,44 @@
+.index {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.message {
+  display: inline-block;
+  padding: 10px 20px;
+  max-width: calc(80% - 50px);
+  border-radius: 15px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.message.myMessage {
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+  background-color: #fffcd3;
+}
+
+.message:not(.myMessage) {
+  margin-left: 50px;
+  border-bottom-left-radius: 0;
+  background-color: #f8f8f9;
+}
+
+.message.isTyping {
+  color: #9da0a4;
+}
+
+.senderProfile {
+  display: none;
+}
+
+.senderProfile.includeProfile:not(.myMessage) {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  margin-right: 10px;
+}

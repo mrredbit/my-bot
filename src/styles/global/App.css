@@ -1,0 +1,10 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  color: #4c4c4c;
+}

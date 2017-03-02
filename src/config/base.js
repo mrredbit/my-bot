@@ -9,6 +9,7 @@ export default {
     sessionId: sessionId
   },
   bot: {
-    name: ''
+    name: 'Robo Nyan',
+    messageDelay: 500
   }
 }

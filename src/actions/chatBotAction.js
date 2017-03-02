@@ -1,5 +1,6 @@
 import actionTypes from './const';
 import dsMessage from '../sources/dsMessages';
+import config from 'config';
 
 import store from '../stores';
 
@@ -9,15 +10,16 @@ const chatBotAction = {
 
     dsMessage.getMessageFromApiAi(data)
       .then(function (response) {
-        if (response.ok){
+        if (response.ok) {
           return response.text()
         }
       })
       .then(function (text) {
         const data = JSON.parse(text);
-        store.dispatch(chatBotAction.getMessageSuccess(data));
+        setTimeout(()=>store.dispatch(chatBotAction.getMessageSuccess(data)), config.bot.messageDelay);
+
       })
-      .catch(function (ex) {
+      .catch(function () {
         store.dispatch(chatBotAction.getMessageFail());
       });
 

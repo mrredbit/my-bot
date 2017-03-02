@@ -8,9 +8,9 @@ export default {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        "Authorization": "Bearer " + config.apiai.accessToken
+        'Authorization': 'Bearer ' + config.apiai.accessToken
       },
-      body: JSON.stringify({query: myMessage, lang: "en", sessionId: config.apiai.sessionId}),
+      body: JSON.stringify({query: myMessage, lang: 'en', sessionId: config.apiai.sessionId})
     });
   }
 };

@@ -16,7 +16,7 @@ class Message extends React.Component {
       myMessage: this.props.senderId === 'me',
       includeProfile: this.props.isPauseMessage || this.props.isTyping
     });
-    const message = this.props.isTyping ? 'Robo Nyan is typing . . . ' : this.props.children;
+    const message = this.props.isTyping ? 'Dave is typing . . . ' : this.props.children;
     return (
       <div className={style.index}>
         <img className={senderProfileClass} src={imgBot}/>

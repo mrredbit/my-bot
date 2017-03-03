@@ -34,6 +34,9 @@ const chatBotReducer = function (chatBotState = initialChatBotState, action = nu
       let intentMessage;
       let isUnableToRecogniseInput;
 
+
+      // Check whether the fulfillment message contain anything first (user defined message, usually with well formatted script),
+      // otherwise use fulfillment.speech
       if (data.result && data.result.fulfillment && data.result.fulfillment.messages) {
         messages.push(...data.result.fulfillment.messages
           .filter((message)=> {
@@ -45,6 +48,11 @@ const chatBotReducer = function (chatBotState = initialChatBotState, action = nu
               text: message.speech
             }
           }));
+      } else if (data.result && data.result.fulfillment && data.result.fulfillment.speech) {
+        messages.push({
+          senderId: 'bot',
+          text: data.result.fulfillment.speech
+        });
       }
 
       if (data.result && data.result.action) {

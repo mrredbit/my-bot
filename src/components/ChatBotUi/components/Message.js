@@ -2,6 +2,7 @@ import React from 'react';
 import style from '../styles/Message.css';
 import imgBot from '../images/bot.svg';
 import nl2br from 'react-nl2br';
+import Linkify from 'react-linkify';
 
 class Message extends React.Component {
   render() {
@@ -19,9 +20,9 @@ class Message extends React.Component {
     return (
       <div className={style.index}>
         <img className={senderProfileClass} src={imgBot}/>
-        <div className={messageClass}>
+        <Linkify properties={{target: '_blank'}} className={messageClass}>
           {nl2br(message)}
-        </div>
+        </Linkify>
       </div>
     );
   }

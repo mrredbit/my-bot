@@ -9,7 +9,8 @@ export default {
     sessionId: sessionId
   },
   bot: {
-    name: 'Robo Nyan',
-    messageDelay: 500
+    name: 'Metallic Dave',
+    messageDelay: 500,
+    maxFailedRecogniseInput: 4
   }
 }

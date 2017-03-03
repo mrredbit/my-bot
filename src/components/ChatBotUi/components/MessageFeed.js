@@ -24,7 +24,7 @@ class MessageFeed extends React.Component {
                   renderView={props => <div {...props} className={style.index}/>}
       >
         {
-          messages.map(function (message, index, arr) {
+          messages.filter((message)=> !!message.text).map((message, index, arr) => {
             let isPauseMessage = (index >= arr.length - 1) || (message.senderId !== arr[index + 1].senderId); // last message or senderId is different in next message
 
             return <Message key={index}

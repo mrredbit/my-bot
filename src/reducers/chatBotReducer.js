@@ -31,14 +31,17 @@ const chatBotReducer = function (chatBotState = initialChatBotState, action = nu
       let messages = [];
 
       if (data.result && data.result.action) {
-        intentMessage = intentMessageMapping[data.result.action];
+        intentMessage = intentMessageMapping.map(data.result.action, data.result.parameters);
       }
 
-      if (data.result && data.result.fulfillment && data.result.fulfillment.speech) {
-        messages.push({
-          senderId: 'bot',
-          text: data.result.fulfillment.speech
-        });
+      if (data.result && data.result.fulfillment && data.result.fulfillment.messages) {
+        messages.push(...data.result.fulfillment.messages.map((message) => {
+            return {
+              senderId: 'bot',
+              text: message.speech
+            }
+          }
+        ));
       }
 
       if (intentMessage) {

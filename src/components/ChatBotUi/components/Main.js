@@ -16,6 +16,10 @@ class Main extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.input.focus();
+  }
+
   render() {
     return (
       <div className={style.index}>

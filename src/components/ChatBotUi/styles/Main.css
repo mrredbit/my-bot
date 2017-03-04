@@ -35,8 +35,6 @@
 .inputContainer {
   overflow: hidden;
   height: 100%;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
   box-shadow: 0 0 5px 0 rgba(76, 76, 76, 0.15);
 
 }
@@ -49,8 +47,10 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: #ffffff;
+  border-radius: 5px 0 0 5px;
   font-size: 16px;
   line-height: 1.6;
+
 }
 
 .input::placeholder {
@@ -63,8 +63,7 @@
   width: 90px;
   height: 50px;
   background-color: #00d4b0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 0 5px 5px 0;
   background-image: url('../images/send.svg');
   background-repeat: no-repeat;
   background-position: center 10px;

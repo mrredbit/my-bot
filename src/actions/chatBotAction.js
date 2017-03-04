@@ -6,7 +6,7 @@ import store from '../stores';
 
 const chatBotAction = {
   sendMessage: function (data) {
-    store.dispatch(chatBotAction.getMessage());
+    setTimeout(()=>store.dispatch(chatBotAction.getMessage()), config.bot.messageDelay);
 
     dsMessage.getMessageFromApiAi(data)
       .then(function (response) {

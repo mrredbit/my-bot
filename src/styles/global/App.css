@@ -8,3 +8,8 @@ body {
   font-family: Roboto;
   color: #4c4c4c;
 }
+
+a,
+a:visited {
+  color: #4998ba;
+}

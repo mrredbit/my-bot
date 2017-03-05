@@ -46,7 +46,7 @@ const companyMapping = {
 
 const skillMapping = {
   'not_mentioned': {
-    'talkabout.skills': 'I am a senior frontend developer proficient in Javascript (ES6 + React + Redux), I am also familiar with JQuery, Smart TV javascript frameworks and also backend skills like .Net, Java, Nodejs.\n\nIf you are interested to know more about specific skills, I am happy to tell you in detail.'
+    'talkabout.skills': 'I am a senior frontend developer proficient in Javascript (ES6 + React + Redux), with experience in BDD (using Mocha, Chai, Sinon and Selenium) and Continuous Delivery. I am also familiar with JQuery, Smart TV javascript frameworks and backend technology like .Net, Java, Nodejs.\n\nIf you are interested to know more about specific skills, I am happy to tell you in detail.'
   },
   'javascript': {
     'talkabout.skills': 'I have 7 years of development experience using Javascript to build web applications serving over million of users. I have also helped revamping existing JQuery website with React and Redux.\n\nPersonally perfer using React and Redux in large application, I like Redux\'s unidirectional data flow and single source of truth which helps maintainance and testing a lot.'
@@ -58,7 +58,7 @@ const skillMapping = {
     'talkabout.skills': 'For backend development, I have experience in building a company HR system and also a local vessel system for Hong Kong governent from scratch. The technologies I used are ASP.Net MVC and Java, I also have some experience with Nodejs in my side projects.'
   },
   'unit_test': {
-    'talkabout.skills': 'I am familiar in using Mocha, Chai and Sinon to write unit tests in BDD.'
+    'talkabout.skills': 'I am familiar with BDD. In my last job Streetlife we use Mocha, Chai, Sinon and also Selenium to write tests.'
   },
   'smart_tv': {
     'talkabout.skills': 'I am familiar with Smart TV application development, its mainly Javascript, HTML5 and CSS3 like web applications, but the biggest challenge of it is that different TV platforms have different native api, e.g. a Samsung app couldn\'t run on a LG TV. When I worked in Accedo we solved this problem by adding an abstract layer on top of our application to talk with different TV platform, so that we can write one app and deploy to different platforms.'
@@ -76,7 +76,7 @@ const skillMapping = {
     'talkabout.skills': 'I have used Nodejs in some of my side projects.'
   },
   'website': {
-    'talkabout.skills': 'I built small and large websites, from internal HR system to social nework that serves more that 1,500,000 users. Right now I am building the chat bot that you are talking to.'
+    'talkabout.skills': 'I built small and large websites, from internal HR system to social network that serves more that 1,500,000 users. Right now I am building the chat bot that you are talking to.'
   }
 };
 

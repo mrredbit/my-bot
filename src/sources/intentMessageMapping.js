@@ -74,6 +74,9 @@ const skillMapping = {
   },
   'node': {
     'talkabout.skills': 'I have used Nodejs in some of my side projects.'
+  },
+  'website': {
+    'talkabout.skills': 'I built small and large websites, from internal HR system to social nework that serves more that 1,500,000 users. Right now I am building the chat bot that you are talking to.'
   }
 };
 

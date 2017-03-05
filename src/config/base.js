@@ -11,6 +11,6 @@ export default {
   bot: {
     name: 'Metallic Dave',
     messageDelay: 500,
-    maxFailedRecogniseInput: 4
+    maxFailedRecogniseInput: 3
   }
 }

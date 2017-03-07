@@ -8,7 +8,7 @@
 
 .message {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 20px;
   max-width: calc(80% - 50px);
   border-radius: 15px;
   font-size: 12px;
@@ -25,7 +25,7 @@
 }
 
 .message:not(.myMessage) {
-  margin-left: 50px;
+  margin-left: 60px;
   border-bottom-left-radius: 0;
   background-color: #f8f8f9;
 }
@@ -42,6 +42,22 @@
   display: block;
   position: absolute;
   bottom: 0;
-  height: 40px;
+  height: 50px;
   margin-right: 10px;
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+
+  .message {
+    padding: 10px 20px;
+  }
+
+  .message:not(.myMessage) {
+    margin-left: 50px;
+  }
+
+  .senderProfile.includeProfile:not(.myMessage) {
+    height: 40px;
+  }
 }

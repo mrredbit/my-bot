@@ -70,7 +70,7 @@ const skillMapping = {
     'talkabout.skills': 'I have experience in building a company HR system with .Net'
   },
   'java': {
-    'talkabout.skills': 'I have experience in building a local vessel system for Hong Kong government from scratch.'
+    'talkabout.skills': 'I have experience in building a local vessel system for Hong Kong government from scratch with Java.'
   },
   'node': {
     'talkabout.skills': 'I have used Nodejs in some of my side projects.'
